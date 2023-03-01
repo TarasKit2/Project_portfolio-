@@ -5,17 +5,17 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-      <h1>Портфоліо</h1>
-      <nav>
+   <header style="height:  100px;"> <!-- висота шторки -->
+      <h1 style="margin-top: -12px;">Портфоліо</h1> <!-- висота заголовка -->
+      <nav style="margin-top: -40px;"> <!-- висота кнопок -->
         <ul>
-<li><a href="#home">Головна</a></li>
-<li><a href="#about">Про мене</a></li>
-<li><a href="#projects">Проекти</a></li>
-<li><a href="#contact">Контакти</a></li>
+          <li><a href="#home" class="scroll-btn">Головна</a></li>
+          <li><a href="#about" class="scroll-btn">Про мене</a></li>
+          <li><a href="#projects" class="scroll-btn">Проекти</a></li>
+          <li><a href="#contact" class="scroll-btn">Контакти</a></li>
         </ul>
       </nav>
-    </header>
+</header>
     <main>
       <section id="home">
   <h2>Головна</h2>
@@ -63,5 +63,24 @@
       <p>© 2023 Іван. Усі права захищені.</p>
     </footer>
 	
+	<script>
+	
+  const scrollButtons = document.querySelectorAll('.scroll-btn');
+
+scrollButtons.forEach((button) => {
+  button.addEventListener('click', (event) => {
+    event.preventDefault(); // запобігаємо переходу по посиланню
+    const sectionId = button.getAttribute('href');
+    const section = document.querySelector(sectionId);
+    const offset = 50; // відступ, який потрібно застосувати
+    const top = section.offsetTop - offset;
+    window.scrollTo({
+      top,
+      behavior: 'smooth' // плавний скролл
+    });
+  });
+});
+</script>
+
   </body>
 </html>
