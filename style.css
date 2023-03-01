@@ -1,0 +1,214 @@
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* Global Styles  шось там */
+body {
+font-family: Arial, sans-serif;
+font-size: 16px;
+line-height: 1.5;
+background-color: #fff;
+color: #333;
+}
+
+a {
+color: #333;
+text-decoration: none;
+}
+
+ul {
+list-style: none;
+}
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+/* Header Styles  шось там */
+header {
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 999;
+}
+
+header h1 {
+font-size: 2rem;
+font-weight: bold;
+margin: 0;
+padding: 1rem;
+}
+
+nav ul {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem;
+}
+
+nav li {
+margin: 0 1rem;
+}
+
+nav a:hover {
+border-bottom: 2px solid #333;
+}
+
+/* Main Styles шось там  */
+main {
+margin-top: 6rem;
+}
+
+section {
+margin: 4rem 0;
+}
+
+section h2 {
+font-size: 1.5rem;
+font-weight: bold;
+margin-bottom: 2rem;
+text-align: center;
+}
+
+section ul li {
+margin: 4rem 0;
+}
+
+section ul li img {
+margin-bottom: 2rem;
+}
+
+section ul li h3 {
+font-size: 1.25rem;
+font-weight: bold;
+margin-bottom: 1rem;
+}
+
+section ul li p {
+font-size: 1rem;
+margin-bottom: 2rem;
+}
+
+section ul li p.center {
+text-align: center;
+}
+
+/* Footer Styles */
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 1rem;
+}
+
+footer p {
+margin: 0;
+font-size: 0.875rem;
+}
+
+
+/* Загальні стилі */
+
+{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: Arial, sans-serif;
+font-size: 16px;
+line-height: 1.6;
+color: #333;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+ul {
+list-style: none;
+}
+
+.center {
+text-align: center;
+}
+
+/* Стилі для шапки */
+header {
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+padding: 2px; /* зменшено значення padding */
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+}
+
+header h1 {
+font-size: 2.5rem;
+}
+
+header nav {
+margin-top: 10px;
+}
+
+header nav ul {
+display: flex;
+}
+
+header nav li {
+margin-right: 10px; /* зменшено значення margin-right */
+}
+
+header nav li:last-child {
+margin-right: 0;
+}
+
+header nav a {
+font-size: 1.2rem;
+font-weight: bold;
+}
+/* Стилі для головного змісту */
+main {
+padding-top: 70px;
+}
+
+section {
+padding: 50px;
+background-color: #f7f7f7;
+margin-bottom: 20px;
+}
+
+section h2 {
+font-size: 2rem;
+margin-bottom: 20px;
+}
+
+section img {
+max-width: 100%;
+height: auto;
+margin-bottom: 20px;
+}
+
+section h3 {
+font-size: 1.5rem;
+margin-bottom: 10px;
+}
+
+section p {
+margin-bottom: 20px;
+}
+
+/* Стилі для футера */
+footer {
+background-color: #f7f7f7;
+padding: 20px;
+margin-top: 20px;
+text-align: center;
+}
