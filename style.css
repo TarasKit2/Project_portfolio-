@@ -3,12 +3,35 @@ html {
   scroll-behavior: smooth; /* плавний скролл */
 }
 
+/* Стилі для розділів з фоном зеленого кольору */
+#home {
+background-color: #8cbf77;
+}
+
+#about {
+background-color: #8cbf77;
+}
+
+#projects {
+background-color: #8cbf77;
+}
+
+#contact {
+background-color: #8cbf77;
+}
+
+#conta {
+background-color: #8cbf77;
+}
+
+
 body {
-  font-family: 'Roboto', sans-serif; /* шрифт */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #F5F5F5; /* колір фону */
+font-family: 'Roboto', sans-serif; /* шрифт */
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-image: url("images.jfif");
+background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
