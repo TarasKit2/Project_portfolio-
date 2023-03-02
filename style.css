@@ -1,235 +1,106 @@
-{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+/* Загальні стилі для всього сайту */
+html {
+  scroll-behavior: smooth; /* плавний скролл */
 }
-/* Global Styles  шось там */
+
 body {
-font-family: Arial, sans-serif;
-font-size: 16px;
-line-height: 1.5;
-background-color: #fff;
-color: #333;
+  font-family: 'Roboto', sans-serif; /* шрифт */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #F5F5F5; /* колір фону */
 }
 
-a {
-color: #333;
-text-decoration: none;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif; /* шрифт для заголовків */
 }
 
-ul {
-list-style: none;
-}
-
-img {
-max-width: 100%;
-height: auto;
-}
-
-/* Header Styles  шось там */
+/* Стилі для шапки сайту */
 header {
-background-color: #fff;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-z-index: 999;
-}
-
-header h1 {
-font-size: 2rem;
-font-weight: bold;
-margin: 0;
-padding: 1rem;
+  height: 100px; /* висота шапки */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* тінь */
+  background-color: #FFFFFF; /* колір фону */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
 
 nav ul {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
-margin: 0 1rem;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555555; /* колір тексту */
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out; /* анімація */
 }
 
 nav a:hover {
-border-bottom: 2px solid #333;
+  color: #2196F3; /* колір тексту при наведенні */
 }
 
-/* Main Styles шось там  */
+/* Стилі для основного контенту сайту */
 main {
-margin-top: 6rem;
+  padding-top: 100px; /* враховуємо висоту шапки */
+  padding-bottom: 40px;
+  margin: 0 auto;
+  max-width: 1200px; /* максимальна ширина */
 }
 
 section {
-margin: 4rem 0;
+  padding: 60px 20px;
 }
 
 section h2 {
-font-size: 1.5rem;
-font-weight: bold;
-margin-bottom: 2rem;
-text-align: center;
-}
-
-section ul li {
-margin: 4rem 0;
-}
-
-section ul li img {
-margin-bottom: 2rem;
-}
-
-section ul li h3 {
-font-size: 1.25rem;
-font-weight: bold;
-margin-bottom: 1rem;
-}
-
-section ul li p {
-font-size: 1rem;
-margin-bottom: 2rem;
-}
-
-section ul li p.center {
-text-align: center;
-}
-
-/* Footer Styles */
-footer {
-background-color: #333;
-color: #fff;
-text-align: center;
-padding: 1rem;
-}
-
-footer p {
-margin: 0;
-font-size: 0.875rem;
-}
-
-
-/* Загальні стилі */
-
-{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
-body {
-font-family: Arial, sans-serif;
-font-size: 16px;
-line-height: 1.6;
-color: #333;
-}
-
-a {
-text-decoration: none;
-color: inherit;
-}
-
-ul {
-list-style: none;
-}
-
-.center {
-text-align: center;
-}
-
-/* Стилі для шапки */
-header {
-background-color: #fff;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-padding: 0.1px; /* зменшено значення padding */
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-}
-
-header h1 {
-font-size: 2.0rem; /* зменшено значення font-size */
-}
-
-header nav {
-margin-top: 5px; /* зменшено значення margin-top */
-}
-
-header nav ul {
-display: flex;
-}
-
-header nav li {
-margin-right: 5px; /* зменшено значення margin-right */
-}
-
-header nav li:last-child {
-margin-right: 0;
-}
-
-header nav a {
-font-size: 1.0rem; /* зменшено значення font-size */
-font-weight: bold;
-}
-/* Стилі для головного змісту */
-main {
-padding-top: 70px;
-}
-
-section {
-padding: 50px;
-background-color: #f7f7f7;
-margin-bottom: 20px;
-}
-
-section h2 {
-font-size: 2rem;
-margin-bottom: 20px;
-}
-
-section img {
-max-width: 100%;
-height: auto;
-margin-bottom: 20px;
-}
-
-section h3 {
-font-size: 1.5rem;
-margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 section p {
-margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-/* Стилі для футера */
-footer {
-background-color: #f7f7f7;
-padding: 20px;
-margin-top: 20px;
-text-align: center;
+.center {
+  text-align: center;
 }
 
-/* новий розділ для нового типу контейнеру в файлі 123*/
 .projects-container {
-display: grid;
-grid-template-columns: repeat(3, 1fr); /* 3 колонки з однаковою шириною */
-grid-gap: 20px; /* відстань між елементами */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 
-.project {
-width: 100%; /* кожен елемент проекту буде мати ширину 100% від батьківського контейнера /
-padding-bottom: 100%; / задаємо відносну висоту для елементу, щоб зробити його квадратом */
-position: relative;
+.projects-container li {
+  list-style-type: none;
+  width: calc(33.333% - 20px); /* ширина елемента */
+  margin-bottom: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* тінь */
+  transition: all 0.2s ease-in-out; /* анімація */
 }
 
-.project img {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%; /* забезпечуємо зміст зображення зі стилів для батьківського контейнера /
-height: 100%; / забезпечуємо зміст зображення зі стилів для батьківського контейнера */
-}
+.projects-container li:hover {
+  transform: translateY(-5px); /* зміщен
