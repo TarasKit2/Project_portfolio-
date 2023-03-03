@@ -1,7 +1,4 @@
-/* Загальні стилі для всього сайту */
-html {
-  scroll-behavior: smooth; /* плавний скролл */
-}
+
 
 /* Стилі для розділів з фоном зеленого кольору */
 #home {
@@ -24,6 +21,29 @@ background-color: #f9f9f9;
 background-color: #f9f9f9;
 }
 
+#social-media-buttons {
+background-color: #f9f9f9;
+}
+
+#social-media {
+  background-color: #f9f9f9;
+  border-radius: 0 0 5px 5px;
+  padding: 20px;
+  margin-top: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+/* анімація для аватарки */
+
+#my-photo {
+  transition: transform 0.3s ease-in-out; 
+}
+
+#my-photo:hover {
+  transform: scale(1.1);
+}
+
+
 
 body {
 font-family: 'Roboto', sans-serif; /* шрифт */
@@ -40,13 +60,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Стилі для шапки сайту */
 header {
-  height: 100px; /* висота шапки */
+  height: 100px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* тінь */
-  background-color: #FFFFFF; /* колір фону */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  background-color: #FFFFFF;
   position: fixed;
   width: 100%;
   top: 0;
@@ -68,19 +88,19 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #555555; /* колір тексту */
+  color: #555555; 
   font-size: 18px;
   font-weight: 500;
   transition: all 0.2s ease-in-out; /* анімація */
 }
 
 nav a:hover {
-  color: #2196F3; /* колір тексту при наведенні */
+  color: #2196F3; 
 }
 
 /* Стилі для основного контенту сайту */
 main {
-  padding-top: 100px; /* враховуємо висоту шапки */
+  padding-top: 100px; /
   padding-bottom: 40px;
   margin: 0 auto;
   max-width: 1200px; /* максимальна ширина */
@@ -101,7 +121,7 @@ section p {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
-  text-align: center; /* рівняємо текст по центру */
+  text-align: center;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -138,11 +158,13 @@ text-align: center;
 }
 
 .projects-container li:hover {
-  transform: translateY(-5px); 
+  transform: translateY(-30px) scale(1.05);
+  
 }
+
 #conta {
   background-color: #f9f9f9;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 0 0;
   padding: 20px;
   margin-top: 0;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -180,22 +202,54 @@ text-align: center;
 }
 
 #conta button[type="submit"] {
-  background-color: #4CAF50;
+  background-color: #454545;
   color: #fff;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 20px;
-  float: right;
+  float: left;
 }
 
+
 #conta button[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #bbb;
+}
+
+#conta button[type="submit"]:active {
+  background-color: #ff0000;
 }
 
 #conta::after {
   content: "";
   display: table;
   clear: both;
+}
+
+/*посилання на сайти */
+
+a {
+  display: inline-block;
+  margin-right: 10px;
+}/
+.my-media {
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+  top: 0;
+}
+
+.my-media:hover {
+   top: -5px;
+   transform: scale(1.10);
+}
+
+.social-text {
+  color: #555;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 10px;
+  filter: grayscale(100%);
 }

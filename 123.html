@@ -18,12 +18,15 @@
 </header>
     <main>
       <section id="home">
-  <h2>Головна</h2>
-  <p class="center">Це головна сторінка мого сайту.</p>
+	     <img src="awatarka.png" alt="awatarka.png" id="my-photo" style="width:20%;"> 
+		 
+  <h2>Про мене</h2>
+  <p class="center">Привіт, я Тарас, студент коледжу зі спеціальності програмування. Я створив своє власне портфоліо, де зібрав свої проекти та досягнення, отримані 
+  в ході навчання. Мій основний проект - це сайт портфоліо, який я розробив в рамках практики. </p>
 </section>
 <section id="about">
   <h2>Про мене</h2>
-  <p class="center">Вітаю! Мене звати Дения, я фотограф. Я працюю в цій сфері вже 10 років із задоволенням та любов'ю до мистецтва.</p>
+  <p class="center">Вітаю! </p>
 </section>
 
 
@@ -45,7 +48,6 @@
       <h3>Проект 3</h3>
       <p>Опис проекту 3</p>
     </li>
-    <!-- додайте більше елементів li, якщо потрібно -->
   </ul>
 </section>
 
@@ -54,7 +56,7 @@
   <h2>Контакти</h2>
   <ul>
     <li>Телефон: 123-456-7890</li>
-    <li>Email: ivan@example.com</li>
+    <li>Email: taras@example.com</li>
     <li>Адреса: вул. Хрещатик, 1, Київ</li>
   </ul>
 
@@ -62,7 +64,7 @@
 
 <section id="conta">
   <h2>Залиште свій відгук</h2>
-  <form action="absd" method="POST">
+  <form action="absd" method="POST" id="feed">
     <label for="name">Ім'я:</label>
     <br>
     <input type="text" id="name" name="name" required>
@@ -81,14 +83,44 @@
     <br>
     <br>
 
-    <button type="submit">Відправити</button>
+   <button type="submit" id="btn">Відправити</button>
   </form>
 </section>
 
+<script>
+  const feedbackForm = document.getElementById('feed');
+  const submitBtn = document.getElementById('btn');
+  const originalBtnText = submitBtn.innerText;
+
+  feedbackForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    submitBtn.innerText = 'Відправлено';
+  });
+</script>
+
+<section id="social-media">
+
+    <a href="https://twitter.com/">
+  <img src="Twitter.png" alt="Перша фото" width="40" class="my-media" height="40" >
+</a>
+
+<a href="https://uk-ua.facebook.com/">
+  <img src="Facebook.png" alt="Друга фото" width="40" class="my-media" height="40">
+</a>
+
+<a href="https://www.instagram.com/">
+  <img src="Instagram.png" alt="Третя фото" width="40" class="my-media" height="40" >
+</a>
+ <div class="social-text">Мої соціальні мережі</div>
+
+    </section>
+	
+	
 
     </main>
     <footer>
-      <p>© 2023 Іван. Усі права захищені.</p>
+      <p>© 2023 Тарас. Усі права захищені.</p>
     </footer>
 	
 	
