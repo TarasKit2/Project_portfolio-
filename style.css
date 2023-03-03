@@ -5,23 +5,23 @@ html {
 
 /* Стилі для розділів з фоном зеленого кольору */
 #home {
-background-color: #8cbf77;
+background-color: #f9f9f9;
 }
 
 #about {
-background-color: #8cbf77;
+background-color: #f9f9f9;
 }
 
 #projects {
-background-color: #8cbf77;
+background-color: #f9f9f9;
 }
 
 #contact {
-background-color: #8cbf77;
+background-color: #f9f9f9;
 }
 
 #conta {
-background-color: #8cbf77;
+background-color: #f9f9f9;
 }
 
 
@@ -101,9 +101,15 @@ section p {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
-  text-align: center;
+  text-align: center; /* рівняємо текст по центру */
   max-width: 700px;
   margin: 0 auto;
+}
+section img {        /* рівняємо фотографію по центру */
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .center {
@@ -121,9 +127,75 @@ section p {
   list-style-type: none;
   width: calc(33.333% - 20px); /* ширина елемента */
   margin-bottom: 40px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* тінь */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* тінь */
   transition: all 0.2s ease-in-out; /* анімація */
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px; /* задаємо радіус заокруглення кутів */
+}
+
+.projects-container li h3 {
+text-align: center;
 }
 
 .projects-container li:hover {
-  transform: translateY(-5px); /* зміщен
+  transform: translateY(-5px); 
+}
+#conta {
+  background-color: #f9f9f9;
+  border-radius: 0 0 5px 5px;
+  padding: 20px;
+  margin-top: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#conta h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#conta label {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#conta input[type="text"],
+#conta input[type="email"],
+#conta textarea {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+#conta textarea {
+  height: 150px;
+  resize: none;
+  border-radius: 0 0 5px 5px;
+}
+
+#conta button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  float: right;
+}
+
+#conta button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#conta::after {
+  content: "";
+  display: table;
+  clear: both;
+}
