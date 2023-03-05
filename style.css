@@ -1,4 +1,9 @@
 
+/*Конпки на шторцы*/ 
+
+.scroll-btn {
+   font-size: 25px;
+}
 
 /* Стилі для розділів з фоном зеленого кольору */
 #home {
@@ -53,7 +58,7 @@ font-family: 'Roboto', sans-serif; /* шрифт */
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-background-image: url("images.jfif");
+background-image: url("Photo/images.jfif");
 background-size: cover;
 }
 
@@ -69,13 +74,34 @@ header {
   align-items: center;
   padding: 0 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  background-color: #FFFFFF;
+  background-color: #fffa6c;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1;
 }
+/**/
 
+  .language-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lang-btn {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .lang-btn:hover {
+    background-color: #333;
+  }
+
+/* */
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -96,6 +122,11 @@ nav a {
   font-weight: 500;
   transition: all 0.2s ease-in-out; /* анімація */
 }
+
+nav a:hover {
+  color: #2196F3; 
+}
+/**/ 
 
 nav a:hover {
   color: #2196F3; 
@@ -164,73 +195,86 @@ text-align: center;
   transform: translateY(-30px) scale(1.05);
   
 }
+/*   */
 
-
-#conta {
-  background-color: #f9f9f9;
-  border-radius: 0 0 0 0;
-  padding: 20px;
-  margin-top: 0;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+/* Contact section */
+#contact {
+  background-color: #f7f7f7;
+  padding: 50px 0;
 }
 
-#conta h2 {
-  font-size: 28px;
+/* Contact heading */
+#contact h2 {
   text-align: center;
-  margin-bottom: 20px;
-}
-
-#conta label {
-  display: block;
-  font-size: 20px;
+  font-size: 32px;
   font-weight: bold;
-  margin-bottom: 10px;
-}
-
-#conta input[type="text"],
-#conta input[type="email"],
-#conta textarea {
-  width: 50%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 0;
-  box-sizing: border-box;
   margin-bottom: 20px;
+}
+
+/* Contact description */
+#contact p {
+  text-align: center;
   font-size: 18px;
+  margin-bottom: 50px;
 }
 
-#conta textarea {
-  height: 150px;
-  resize: none;
-  border-radius: 0 0 5px 5px;
+/* Contact form */
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
-#conta button[type="submit"] {
-  background-color: #454545;
-  color: #fff;
-  padding: 12px 20px;
+/* Form input labels */
+#contact form label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Form input fields */
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+  padding: 10px;
+  font-size: 16px;
   border: none;
-  border-radius: 4px;
+  border-bottom: 2px solid #999;
+  margin-bottom: 20px;
+}
+
+/* Form input fields on focus */
+#contact form input[type="text"]:focus,
+#contact form input[type="email"]:focus,
+#contact form textarea:focus {
+  outline: none;
+  border-color: #555;
+}
+
+/* Form input fields with error */
+#contact form input[type="text"]:invalid,
+#contact form input[type="email"]:invalid,
+#contact form textarea:invalid {
+  border-color: red;
+}
+
+/* Form submit button */
+#contact form button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 20px;
-  float: left;
 }
 
-
-#conta button[type="submit"]:hover {
-  background-color: #bbb;
+/* Form submit button on hover */
+#contact form button[type="submit"]:hover {
+  background-color: #555;
 }
-
-#conta button[type="submit"]:active {
-  background-color: #ff0000;
-}
-
-#conta::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
+	
 /*посилання на сайти */
 
 a {
