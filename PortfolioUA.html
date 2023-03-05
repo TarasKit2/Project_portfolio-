@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Портфоліо</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>	
+   <header style="height:  100px;"> <!-- висота шторки -->
+      <h1 style="margin-top: -12px;">Портфоліо</h1> <!-- висота заголовка -->
+      <nav style="margin-top: -40px;"> <!-- висота кнопок -->
+        <ul>
+          <li><a href="#home" class="scroll-btn">Головна</a></li>
+          <li><a href="#skills" class="scroll-btn">Уміння</a></li>
+          <li><a href="#projects" class="scroll-btn">Проекти</a></li>
+          <li><a href="#contact" class="scroll-btn">Контакти</a></li>
+		  <li><a href="PortfolioEN.html"><img src="Photo\EN.png" width="30" height="20" alt="EN"></a></li>
+		  <li><a href="PortfolioPL.html"><img src="Photo\PL.png" width="30" height="20" alt="PL"></a></li>
+        </ul>
+		
+      </nav>
+</header>
+    <main>
+      <section id="home">
+	     <img src="Photo/awatarka.png" alt="awatarka.png" id="my-photo" style="width:20%;"> 
+		 
+  <h2>Про мене</h2>
+  <p class="center">Привіт, я Тарас, студент коледжу зі спеціальності програмування. Я створив своє власне портфоліо, де зібрав свої проекти та досягнення, отримані 
+  в ході навчання. Мій основний проект - це сайт портфоліо, який я розробив в рамках практики. </p>
+</section>
+
+<section id="skills">
+<h2>Уміння</h2>
+</section>
+
+<section id="skills">
+  <div class="skill">
+    <img src="Photo/ідеї.png" alt="Уміння 1">
+    <h3>Розуміння концепцій програмування</h3>
+    <p>Здатність розуміти основні концепції програмування, такі як об'єктно-орієнтоване програмування, структурне програмування та функціональне програмування.</p>
+  </div>
+  <div class="skill">
+    <img src="Photo/проблеми.png" alt="Уміння 2">
+    <h3>Вміння розв'язувати проблеми</h3>
+    <p>Здатність розуміти проблеми та знаходити їх розв'язання, використовуючи логічне мислення та алгоритмічні навички.</p>
+  </div>
+  <div class="skill">
+    <img src="Photo/програмування.png" alt="Уміння 3">
+    <h3>Знання мов програмування</h3>
+    <p>Досвід роботи з популярними мовами програмування, такими як Java, Python, JavaScript, C++ тощо.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Проекти</h2>
+  <ul class="projects-container">
+    <li>
+      <img src="Photo/dim.png" alt="Проект 1">
+      <h3>Дім</h3>
+      <p class="hidden-text" >Сайт для компації забудовника</p>
+    </li>
+    <li>
+      <img src="Photo/car.png" alt="Проект 2">
+      <h3>Грузоперевозки</h3>
+      <p class="hidden-text" >База данних для компанії перевізника</p>
+    </li>
+    <li>
+      <img src="Photo/kino.png" alt="Проект 3">
+      <h3>Кінотеарт</h3>
+      <p class="hidden-text">Концепт сайту для кінотеартку</p>
+    </li>
+  </ul>
+  
+</section>
+
+<section id="contact">
+  <h2>Контакти</h2>
+  <p>Надішліть мені повідомлення, якщо у вас є запитання або пропозиції</p>
+  <form action="onufruktaras@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="user_name" required>
+    <label for="email">Електронна пошта:</label>
+    <input type="email" id="email" name="user_email" required>
+    <label for="message">Повідомлення:</label>
+    <textarea id="message" name="user_message" required></textarea>
+    <button type="submit">Надіслати</button>
+  </form>
+</section>
+
+
+<section id="social-media">
+
+    <a href="https://twitter.com/">
+  <img src="Photo/Twitter.png" alt="Перша фото" width="40" class="my-media" height="40" ">
+</a>
+
+<a href="https://uk-ua.facebook.com/">
+  <img src="Photo/Facebook.png" alt="Друга фото" width="40" class="my-media" height="40">
+</a>
+
+<a href="https://www.instagram.com/">
+  <img src="Photo/Instagram.png" alt="Третя фото" width="40" class="my-media" height="40">
+</a>
+ <div class="social-text">Мої соціальні мережі</div>
+
+    </section>
+	
+	
+
+    </main>
+    <footer>
+      <p>© 2023 Тарас. Усі права захищені.</p>
+    </footer>
+	
+	
+	
+	<script>
+	
+  const scrollButtons = document.querySelectorAll('.scroll-btn');
+
+scrollButtons.forEach((button) => {
+  button.addEventListener('click', (event) => {
+    event.preventDefault(); // запобігаємо переходу по посиланню
+    const sectionId = button.getAttribute('href');
+    const section = document.querySelector(sectionId);
+    const offset = 50; // відступ, який потрібно застосувати
+    const top = section.offsetTop - offset;
+    window.scrollTo({
+      top,
+      behavior: 'smooth' // плавний скролл
+    });
+  });
+});
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>	
+   <header style="height:  100px;"> <!-- header height -->
+      <h1 style="margin-top: -12px;">Portfolio</h1> <!-- title height -->
+      <nav style="margin-top: -40px;"> <!-- nav height -->
+        <ul>
+          <li><a href="#home" class="scroll-btn">Home</a></li>
+          <li><a href="#skills" class="scroll-btn">Skills</a></li>
+          <li><a href="#projects" class="scroll-btn">Projects</a></li>
+          <li><a href="#contact" class="scroll-btn">Contact</a></li>
+		   <li><a href="PortfolioUA.html"><img src="Photo\UA.png" width="30" height="20" alt="UA"></a></li>
+		   <li><a href="PortfolioPL.html"><img src="Photo\PL.png" width="30" height="20" alt="PL"></a></li>
+        </ul>
+      </nav>
+</header> 
+    <main>
+	
+	
+      <section id="home">
+	     <img src="Photo/awatarka.png" alt="awatarka.png" id="my-photo" style="width:20%;"> 
+  <h2>About me</h2>
+  <p class="center">Hi, I'm Taras, a college student studying programming. I have created my own portfolio to showcase my projects and achievements throughout my education. My primary project is this portfolio website, which I developed during my practice.</p>
+</section>
+<section id="skills">
+  <div class="skill">
+    <img src="Photo/ідеї.png" alt="Skill 1">
+    <h3>Understanding of programming concepts</h3>
+    <p>Ability to understand basic programming concepts, such as object-oriented programming, structured programming, and functional programming.</p>
+  </div>
+  <div class="skill">
+    <img src="Photo/проблеми.png" alt="Skill 2">
+    <h3>Problem-solving skills</h3>
+    <p>Ability to understand problems and find solutions using logical thinking and algorithmic skills.</p>
+  </div>
+  <div class="skill">
+    <img src="Photo/програмування.png" alt="Skill 3">
+    <h3>Programming languages proficiency</h3>
+    <p>Experience working with popular programming languages such as Java, Python, JavaScript, C++, etc.</p>
+  </div>
+</section>
+
+
+<section id="projects">
+  <h2>Projects</h2>
+  <ul class="projects-container">
+    <li>
+      <img src="Photo/dim.png" alt="Project 1">
+      <h3>House</h3>
+      <p class="hidden-text">A website for a building contractor</p>
+    </li>
+    <li>
+      <img src="Photo/car.png" alt="Project 2">
+      <h3>Freight transport</h3>
+      <p class="hidden-text">A database for a transportation company</p>
+    </li>
+    <li>
+      <img src="Photo/kino.png" alt="Project 3">
+      <h3>Cine art</h3>
+      <p class="hidden-text">A concept website for a cinema art organization</p>
+    </li>
+  </ul>
+</section>
+
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Send me a message if you have any questions or proposals</p>
+  <form action="onufruktaras@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="user_email" required>
+    <label for="message">Message:</label>
+    <textarea id="message" name="user_message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<section id="social-media">
+<a href="https://twitter.com/">
+<img src="Photo/Twitter.png" alt="First photo" width="40" class="my-media" height="40" ">
+</a>
+
+<a href="https://uk-ua.facebook.com/">
+  <img src="Photo/Facebook.png" alt="Second photo" width="40" class="my-media" height="40">
+</a>
+<a href="https://www.instagram.com/">
+  <img src="Photo/Instagram.png" alt="Third photo" width="40" class="my-media" height="40">
+</a>
+ <div class="social-text">My social media</div>
+ 
+ </section>
+
+
+</main>
+<footer>
+  <p>© 2023 Taras. All rights reserved.</p>
+</footer>
+
+
+
+<script>
+
+const scrollButtons = document.querySelectorAll('.scroll-btn');
+
+scrollButtons.forEach((button) => {
+button.addEventListener('click', (event) => {
+event.preventDefault(); // prevent default link behavior
+const sectionId = button.getAttribute('href');
+const section = document.querySelector(sectionId);
+const offset = 50; // apply offset
+const top = section.offsetTop - offset;
+window.scrollTo({
+top,
+behavior: 'smooth' // smooth scroll
+});
+});
+});
+</script>
+
+  </body>
+</html>

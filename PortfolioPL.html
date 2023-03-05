@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>	
+   <header style="height:  100px;"> <!-- wysokość nagłówka -->
+      <h1 style="margin-top: -12px;">Portfolio</h1> <!-- wysokość tytułu -->
+      <nav style="margin-top: -40px;"> <!-- wysokość przycisków -->
+        <ul>
+          <li><a href="#home" class="scroll-btn">Strona główna</a></li>
+          <li><a href="#skills" class="scroll-btn">Umiejętności</a></li>
+          <li><a href="#projects" class="scroll-btn">Projekty</a></li>
+          <li><a href="#contact" class="scroll-btn">Kontakt</a></li>
+		  <li><a href="PortfolioEN.html"><img src="Photo\EN.png" width="30" height="20" alt="EN"></a></li>
+		    <li><a href="PortfolioUA.html"><img src="Photo\UA.png" width="30" height="20" alt="UA"></a></li>
+        </ul>
+	  </nav>
+	  </header>
+    <main>
+      <section id="home">
+	     <img src="Photo/awatarka.png" alt="awatarka.png" id="my-photo" style="width:20%;"> 
+  <h2>O mnie</h2>
+  <p class="center">Cześć, jestem Taras, student szkoły wyższej na kierunku programowanie. Stworzyłem swoje własne portfolio, gdzie zgromadziłem swoje projekty i osiągnięcia uzyskane podczas nauki. Moim głównym projektem jest strona portfolio, którą stworzyłem w ramach praktyki.</p>
+</section>
+<section id="skills">
+  <div class="skill">
+    <img src="Photo/ідеї.png" alt="Umiejętność 1">
+    <h3>Zrozumienie koncepcji programowania</h3>
+    <p>Umiejętność rozumienia podstawowych koncepcji programowania, takich jak programowanie obiektowe, programowanie strukturalne i programowanie funkcyjne.</p>
+  </div>
+  <div class="skill">
+    <img src="Photo/проблеми.png" alt="Umiejętność 2">
+    <h3>Umiejętność rozwiązywania problemów</h3>
+    <p>Umiejętność rozumienia problemów i znajdowania ich rozwiązań przy użyciu logicznego myślenia i umiejętności algorytmicznych.</p>
+  </div>
+  <div class="skill">
+    <img src="Photo/програмування.png" alt="Umiejętność 3">
+    <h3>Znajomość języków programowania</h3>
+    <p>Doświadczenie w pracy z popularnymi językami programowania, takimi jak Java, Python, JavaScript, C++ itp.</p>
+  </div>
+</section>
+<section id="projects">
+  <h2>Projekty</h2>
+  <ul class="projects-container">
+    <li>
+      <img src="Photo/dim.png" alt="Projekt 1">
+      <h3>Dom</h3>
+      <p class="hidden-text">Strona dla dewelopera</p>
+    </li>
+    <li>
+      <img src="Photo/car.png" alt="Projekt 2">
+      <h3>Przewozy towarowe</h3>
+      <p class="hidden-text">Baza danych dla firmy transportowej</p>
+    </li>
+    <li>
+      <img src="Photo/kino.png" alt="Projekt 3">
+      <h3>Kinoteatr</h3>
+      <p class="hidden-text">Koncepcja strony internetowej dla kina</p>
+    </li>
+  </ul>
+</section>
+<section id="contact">
+  <h2>Kontakt</h2>
+  <p>Wyślij mi wiadomość, jeśli masz pytania lub propozycje</p>
+  <form action="onufruktaras@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Imię:</label>
+    <input type="text" id="name" name="user_name" required>
+    <label for="email">Adres e-mail:</label>
+    <input type="email" id="email" name="user_email" required>
+    <label for="message">Wiadomość:</label>
+    <textarea id="message" name="user_message" required></textarea>
+    <button type="submit">Wyślij</button>
+  </form>
+</section>
+<section id="social-media">
+  <a href="https://twitter.com/">
+    <img src="Photo/Twitter.png" alt="Pierwsze zdjęcie" width="40" class="my-media" height="40">
+  </a>
+  <a href="https://uk-ua.facebook.com/">
+    <img src="Photo/Facebook.png" alt="Drugie zdjęcie" width="40" class="my-media" height="40">
+  </a>
+  <a href="https://www.instagram.com/">
+    <img src="Photo/Instagram.png" alt="Trzecie zdjęcie" width="40" class="my-media" height="40">
+  </a>
+  <div class="social-text">Moje media społecznościowe</div>
+</section>
+</main>
+<footer>
+  <p>© 2023 Taras. Wszelkie prawa zastrzeżone.</p>
+</footer>
+<script>
+  const scrollButtons = document.querySelectorAll('.scroll-btn');
+
+  scrollButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      event.preventDefault(); // zapobiegamy przejściu do odnośnika
+      const sectionId = button.getAttribute('href');
+      const section = document.querySelector(sectionId);
+      const offset = 50; // margines, który należy zastosować
+      const top = section.offsetTop - offset;
+      window.scrollTo({
+        top,
+        behavior: 'smooth' // płynne przewijanie
+      });
+    });
+  });
+</script>
+</body>
+</html>
