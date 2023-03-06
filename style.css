@@ -1,6 +1,7 @@
 
 /*Конпки на шторцы*/ 
 
+<<<<<<< HEAD
 li {
   font-size: 18px;
 }
@@ -38,6 +39,11 @@ nav li a.back {
   padding: 8px 16px;
   border-radius: 4px;
 }
+=======
+.scroll-btn {
+   font-size: 25px;
+}
+>>>>>>> 9073d67b444aae11cfa0cdd04c66c1106efc860e
 
 /* Стилі для розділів з фоном зеленого кольору */
 
