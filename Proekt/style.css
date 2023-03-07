@@ -1,0 +1,497 @@
+
+
+#skills h2 {
+  margin-bottom: 0;
+}
+
+/*Конпки на шторцы*/ 
+
+<<<<<<< HEAD
+li {
+  font-size: 18px;
+}
+
+.scroll-btn {
+   font-size: 25px;
+}
+/* оформлення для кнопки "детально" */ 
+
+.detail-button {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 5px; 
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease-in-out; /* анімація зміни кольору фону кнопки */
+}
+
+.detail-button:hover {
+  background-color: #ccc; /* зміна кольору фону кнопки при наведенні */
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Стилі для розділів з фоном зеленого кольору */
+
+#about {
+background-color: #F5F5F5;
+}
+
+#goals {
+background-color: #F5F5F5;
+}
+
+#features {
+background-color: #F5F5F5;
+}
+
+
+
+
+/**/
+#home {
+background-color: #F5F5F5;
+}
+
+#about {
+background-color: #F5F5F5;
+}
+
+#projects {
+background-color: #F5F5F5;
+}
+
+#contact {
+background-color: #F5F5F5;
+}
+
+#conta {
+background-color: #F5F5F5;
+}
+
+#social-media-buttons {
+background-color: #F5F5F5;
+}
+
+#skills {
+background-color: #F5F5F5;
+}	
+#social-media {
+  background-color: #F5F5F5;
+  border-radius: 0 0 5px 5px;
+  padding: 20px;
+  margin-top: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+/* анімація для аватарки */
+
+#my-photo {
+  transition: transform 0.3s ease-in-out; 
+}
+
+#my-photo:hover {
+  transform: scale(1.1);
+}
+
+
+
+body {
+font-family: 'Roboto', sans-serif; /* шрифт */
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-color: #B3E5FC ;
+/*background-image: url("Photo/images.jfif");*/
+background-size: cover;
+width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif; /* шрифт для заголовків */
+}
+
+/* Стилі для шапки сайту */
+header {
+  height: 100px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  background-color: #2196F3     ;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+/**/
+
+  .language-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lang-btn {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .lang-btn:hover {
+    background-color: #333;
+  }
+
+/* */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555555; 
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #2196F3; 
+}
+/**/ 
+
+nav a:hover {
+  color: #2196F3; 
+}
+
+/* Стилі для основного контенту сайту */
+main {
+  padding-top: 100px; /
+  padding-bottom: 40px;
+  margin: 0 auto;
+  max-width: 1200px; 
+}
+
+section {
+  padding: 60px 20px;
+}
+
+section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+section img {        
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.projects-container li {
+  list-style-type: none;
+  width: calc(33.333% - 20px);
+  margin-bottom: 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  border-bottom: 10px solid #2196F3; /* додано зелену лінію знизу */
+}
+	
+.projects-container li h3 {
+text-align: center;
+}
+
+.projects-container li:hover {
+  transform: translateY(-30px) scale(1.05);
+  
+}
+/*   */
+
+/* Contact section */
+#contact {
+  background-color: #f4f6f5;
+  padding: 50px 0;
+}
+
+/* Contact heading */
+#contact h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Contact description */
+#contact p {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+/* Contact form */
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form input labels */
+#contact form label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Form input fields */
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #999;
+  margin-bottom: 20px;
+}
+
+/* Form input fields on focus */
+#contact form input[type="text"]:focus,
+#contact form input[type="email"]:focus,
+#contact form textarea:focus {
+  outline: none;
+  border-color: #555;
+}
+
+/* Form input fields with error */
+#contact form input[type="text"]:invalid,
+#contact form input[type="email"]:invalid,
+#contact form textarea:invalid {
+  border-color: red;
+}
+
+/* Form submit button */
+#contact form button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Form submit button on hover */
+#contact form button[type="submit"]:hover {
+  background-color: #555;
+}
+	
+/*посилання на сайти */
+
+a {
+  display: inline-block;
+  margin-right: 10px;
+}/
+.my-media {
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+  top: 0;
+}
+
+.my-media:hover {
+   top: -5px;
+   transform: scale(1.10);
+}
+
+.social-text {
+  color: #555;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 10px;
+  filter: grayscale(100%);
+}
+
+* Оформлення навичок */
+.skills-wrapper {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+#skills {
+background-color: #f2f2f2;
+padding: 20px;
+}
+
+.skill {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.skill img {
+max-width: 100px;
+}
+
+.skill h3 {
+margin-top: 10px;
+margin-bottom: 5px;
+}
+
+.skill p {
+text-align: center;
+line-height: 1.5;
+}
+
+
+#skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+}
+
+.skill img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill img:hover {
+  transform: scale(1.4);
+}
+
+.skill h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  font-size: 16px;
+}
+
+/* */ 
+/* кнопки нм */ 
+.back {
+  background-color: #fff;
+  color: #000;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+}
+
+.scroll-btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 1px solid #007FFF;
+  border-radius: 0.3em;
+  background-color: #FFFFFF;
+  color: #000;
+}
+
+.scroll-btn:hover {
+  background-color: #CCCCCC;
+  cursor: pointer; 
+}
+
+/* кнопка назад*/ 
+
+.new-btn {
+ display: inline-block;
+  padding: 0.5em 1em;
+  border: 1px solid #007FFF;
+  border-radius: 0.3em;
+  background-color: #FFFFFF;
+  color: #000
+}
+
+.new-btn:hover {
+background-color: #CCCCCC;
+  cursor: pointer;
+}
+.new-btn {
+   font-size: 25px;
+}
+
+/* ****** */ 
+
+#spec {
+font-size: 1.2em; /* збільшення розміру тексту */
+width: 80%; /* зменшення ширини тексту */
+margin: 10px auto;
+text-align: justify;
+}
+
+#spe {
+  text-align: center;
+}
+
+#sp::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 4px;
+  margin: 10px auto 20px;
+  background-color: #2196f3;
+  animation: line-appear 1s ease-out;
+}
+
+@keyframes line-appear {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}

@@ -1,0 +1,80 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Опис проекту</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1 style="margin-top: 30px; color:white; font-size: 50px;">Опис проекту</h1>
+		<nav>
+		<nav style="margin-top: -10px;">
+			<ul>
+				<li><a href="#about" class="scroll-btn">Про проект</a></li>
+				<li><a href="#goals" class="scroll-btn">Цілі проекту</a></li>
+				<li><a href="#features" class="scroll-btn">Особливості проекту</a></li>
+				<li><a href="../PortfolioUA.html" class="new-btn">Назад</a></li>
+
+
+			</ul>
+			 </nav>
+		</nav>
+	</header>
+
+	<main>
+		<section id="about">
+			<h2 id = "sp">Про проект</h2>
+			<p>Проект "Концепція сайту кінотеатру" передбачає розробку веб-сайту для кінотеатру з метою полегшення процесу бронювання квитків та покращення зв'язку зі споживачами.</p>
+		</section>
+
+		<section id="goals">
+			<h2 id = "sp">Цілі проекту</h2>
+			<h3 id="spe">Основними цілями проекту є:</h3>
+			<ul>
+				<li id="spec">Створення привабливого та зручного інтерфейсу веб-сайту для залучення нових клієнтів.</li>
+				<li id="spec">Полегшення процесу бронювання та придбання квитків для існуючих клієнтів.</li>
+				<li id="spec">Забезпечення користувачам зручної інформаційної підтримки про фільми, що показуються в кінотеатрі.</li>
+				<li id="spec">Підвищення популярності кінотеатру та збільшення числа клієнтів.</li>
+			</ul>
+		</section>
+
+		<section id="features">
+		<h2 id = "sp">Особливості проекту</h2>
+				<h3 id="spe" >Особливості проекту "База даних компанії грузоперевізника" включають:</h3>
+			<ul>
+				<li id="spec">Розробка зручної системи бронювання та придбання квитків.</li>
+				<li id="spec">Надання користувачам зручної та достовірної інформації про фільми, що показуються в кінотеатрі.</li>
+				<li id="spec">Можливість перегляду трейлерів та оглядів фільмів на веб-сайті.</li>
+				<li id="spec">Адаптивність веб-сайту для різних пристроїв, що дозволяє користувачам зручно користуватися сайтом на різних пристроях.</li>
+				<li id="spec">Можливість підписки на новини та отримання спеціальних пропозицій та знижок для клієнтів.</li>
+				<li id="spec">Надання додаткових сервісів, таких як замовлення їжі та напоїв у кінотеатрі.</li>
+				
+				
+			</ul>
+		</section>
+			<script>
+	
+  const scrollButtons = document.querySelectorAll('.scroll-btn');
+
+scrollButtons.forEach((button) => {
+  button.addEventListener('click', (event) => {
+    event.preventDefault(); // запобігаємо переходу по посиланню
+    const sectionId = button.getAttribute('href');
+    const section = document.querySelector(sectionId);
+    const offset = 50; // відступ, який потрібно застосувати
+    const top = section.offsetTop - offset;
+    window.scrollTo({
+      top,
+      behavior: 'smooth' // плавний скролл
+    });
+  });
+});
+</script>
+	</main>
+
+	<footer>
+		<p>&copy; 2023. Усі права захищено.</p>
+	</footer>
+
+</body>
+</html>
